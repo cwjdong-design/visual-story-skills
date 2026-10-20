@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.github-token
+*credentials*
+.DS_Store
+Thumbs.db
+dist/
+private-projects/

@@ -1,0 +1,282 @@
+{
+  "revision": 1,
+  "storyRevision": 1,
+  "style": "竖幅写实线描，低饱和冷灰环境，以黄色雨伞为辨识色；风格为示例设计补充。",
+  "phases": [
+    {
+      "id": "PH_RAIN",
+      "name": "傍晚的工作室门口",
+      "kind": "story",
+      "sourceQuote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。"
+    }
+  ],
+  "assets": [
+    {
+      "id": "CHAR_LIN",
+      "kind": "character",
+      "name": "林岚",
+      "visibility": "visible",
+      "description": "携带图纸的故事人物；原文没有明确年龄、职业或关系，不追加。",
+      "sources": [
+        {
+          "kind": "story",
+          "quote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。"
+        },
+        {
+          "kind": "design",
+          "note": "原文未指明的外观细节采用以下明确方案，不增加剧情事件。"
+        }
+      ],
+      "looks": [
+        {
+          "id": "L01",
+          "description": "短发、灰色外套、深色长裤。",
+          "sources": [
+            {
+              "kind": "design",
+              "note": "为本示例统一视觉辨识，非原文额外事实。"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "ST_NORMAL",
+          "description": "外观无剧情性变化；动作与持有物由镜头记录。",
+          "allowedLookIds": [
+            "L01"
+          ],
+          "phaseIds": [
+            "PH_RAIN"
+          ],
+          "sources": [
+            {
+              "kind": "story",
+              "quote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCENE_DOOR",
+      "kind": "scene",
+      "name": "工作室门口",
+      "visibility": "visible",
+      "description": "同一个门内外相接的门口，室外正在下雨。",
+      "sources": [
+        {
+          "kind": "story",
+          "quote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。"
+        },
+        {
+          "kind": "design",
+          "note": "原文未指明的外观细节采用以下明确方案，不增加剧情事件。"
+        }
+      ],
+      "looks": [
+        {
+          "id": "L01",
+          "description": "朴素木门框、室内暖光、门外冷灰雨幕。",
+          "sources": [
+            {
+              "kind": "design",
+              "note": "为本示例统一视觉辨识，非原文额外事实。"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "ST_RAIN",
+          "description": "傍晚，门外下雨；室内外位置依镜头构图。",
+          "allowedLookIds": [
+            "L01"
+          ],
+          "phaseIds": [
+            "PH_RAIN"
+          ],
+          "sources": [
+            {
+              "kind": "story",
+              "quote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROP_TUBE",
+      "kind": "prop",
+      "name": "图纸纸筒",
+      "visibility": "visible",
+      "description": "装有图纸的纸筒，开口包裹前后须区别。",
+      "sources": [
+        {
+          "kind": "story",
+          "quote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。"
+        },
+        {
+          "kind": "design",
+          "note": "原文未指明的外观细节采用以下明确方案，不增加剧情事件。"
+        }
+      ],
+      "looks": [
+        {
+          "id": "L01",
+          "description": "浅棕纸筒，原文未给尺寸，采用可用一臂抱住的比例。",
+          "sources": [
+            {
+              "kind": "design",
+              "note": "为本示例统一视觉辨识，非原文额外事实。"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "ST_UNWRAPPED",
+          "description": "纸筒开口尚未包牛皮纸。",
+          "allowedLookIds": [
+            "L01"
+          ],
+          "phaseIds": [
+            "PH_RAIN"
+          ],
+          "sources": [
+            {
+              "kind": "story",
+              "quote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。"
+            }
+          ]
+        },
+        {
+          "id": "ST_WRAPPED",
+          "description": "开口已包好牛皮纸，图纸仍在纸筒内。",
+          "allowedLookIds": [
+            "L01"
+          ],
+          "phaseIds": [
+            "PH_RAIN"
+          ],
+          "sources": [
+            {
+              "kind": "story",
+              "quote": "包好后，她拿起门边的黄色雨伞，在门外撑开，护着纸筒走进雨里。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROP_UMBRELLA",
+      "kind": "prop",
+      "name": "黄色雨伞",
+      "visibility": "visible",
+      "description": "同一把黄色雨伞；收拢和撑开是两个状态。",
+      "sources": [
+        {
+          "kind": "story",
+          "quote": "她把手里收拢的黄色雨伞放在门边，回身用一张牛皮纸包住纸筒开口。"
+        },
+        {
+          "kind": "design",
+          "note": "原文未指明的外观细节采用以下明确方案，不增加剧情事件。"
+        }
+      ],
+      "looks": [
+        {
+          "id": "L01",
+          "description": "纯黄色伞面，深灰伞柄；颜色来自原文，其他外观为设计补充。",
+          "sources": [
+            {
+              "kind": "design",
+              "note": "为本示例统一视觉辨识，非原文额外事实。"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "ST_CLOSED",
+          "description": "雨伞收拢；持有或放置位置由镜头记录。",
+          "allowedLookIds": [
+            "L01"
+          ],
+          "phaseIds": [
+            "PH_RAIN"
+          ],
+          "sources": [
+            {
+              "kind": "story",
+              "quote": "她把手里收拢的黄色雨伞放在门边，回身用一张牛皮纸包住纸筒开口。"
+            }
+          ]
+        },
+        {
+          "id": "ST_OPEN",
+          "description": "雨伞已在门外撑开。",
+          "allowedLookIds": [
+            "L01"
+          ],
+          "phaseIds": [
+            "PH_RAIN"
+          ],
+          "sources": [
+            {
+              "kind": "story",
+              "quote": "包好后，她拿起门边的黄色雨伞，在门外撑开，护着纸筒走进雨里。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PROP_PAPER",
+      "kind": "prop",
+      "name": "牛皮纸",
+      "visibility": "visible",
+      "description": "用于包住纸筒开口的一张牛皮纸。",
+      "sources": [
+        {
+          "kind": "story",
+          "quote": "她把手里收拢的黄色雨伞放在门边，回身用一张牛皮纸包住纸筒开口。"
+        },
+        {
+          "kind": "design",
+          "note": "原文未指明的外观细节采用以下明确方案，不增加剧情事件。"
+        }
+      ],
+      "looks": [
+        {
+          "id": "L01",
+          "description": "普通棕色牛皮纸，无文字。",
+          "sources": [
+            {
+              "kind": "design",
+              "note": "为本示例统一视觉辨识，非原文额外事实。"
+            }
+          ]
+        }
+      ],
+      "states": [
+        {
+          "id": "ST_WRAPPING",
+          "description": "这张牛皮纸包住纸筒开口，不另变成纸筒中的图纸。",
+          "allowedLookIds": [
+            "L01"
+          ],
+          "phaseIds": [
+            "PH_RAIN"
+          ],
+          "sources": [
+            {
+              "kind": "story",
+              "quote": "她把手里收拢的黄色雨伞放在门边，回身用一张牛皮纸包住纸筒开口。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

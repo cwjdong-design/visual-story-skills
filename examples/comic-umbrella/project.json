@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "projectId": "comic-umbrella",
+  "title": "雨中的图纸",
+  "medium": "comic",
+  "revision": 1,
+  "target": {
+    "panelCount": 3,
+    "durationSeconds": null,
+    "ratio": "9:16"
+  },
+  "story": {
+    "path": "story.md",
+    "revision": 1,
+    "status": "approved"
+  },
+  "production": {
+    "path": "production.json",
+    "revision": 1,
+    "status": "approved"
+  },
+  "shots": {
+    "path": "shots.json",
+    "revision": 1,
+    "status": "approved"
+  },
+  "authorization": {
+    "generationAllowed": false,
+    "publicationAllowed": false,
+    "maxAttemptsPerShot": 1,
+    "notes": "虚构规划示例；approved 用于演示采用状态，不代表真实用户批准。未提交任何生成。"
+  },
+  "platform": {
+    "name": null,
+    "adapterPath": null
+  }
+}

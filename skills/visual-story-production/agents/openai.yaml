@@ -1,0 +1,4 @@
+interface:
+  display_name: "视觉叙事制作"
+  short_description: "独立制作漫画与短剧，支持跨 Agent 交接和跨画布执行"
+  default_prompt: "使用 $visual-story-production 接续或启动我的漫画或短剧项目，先检查资料和制作进度，再完成当前所需阶段。"

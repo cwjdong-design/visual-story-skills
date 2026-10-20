@@ -1,0 +1,143 @@
+{
+  "revision": 1,
+  "storyRevision": 1,
+  "productionRevision": 1,
+  "shots": [
+    {
+      "id": "SH01",
+      "phaseId": "PH_RAIN",
+      "beat": "建立下雨和图纸需要保护的情境。",
+      "sourceQuote": "傍晚，林岚抱着装有图纸的纸筒走到工作室门口，发现外面正在下雨。",
+      "instant": "林岚停在工作室门内看向雨幕，抱着未包开口的纸筒，另一手握收拢黄伞。",
+      "before": "人物来到门口，纸筒未包，黄伞收拢。",
+      "after": "发现下雨，尚未放伞。",
+      "timeBridge": "开场",
+      "camera": "中景，门框包含室内人物和门外雨幕。",
+      "composition": "主体和关键道具清楚，不加入其他角色。",
+      "assetIds": [
+        "CHAR_LIN",
+        "SCENE_DOOR",
+        "PROP_TUBE",
+        "PROP_UMBRELLA"
+      ],
+      "visualTargets": [
+        {
+          "assetId": "CHAR_LIN",
+          "lookId": "L01",
+          "stateId": "ST_NORMAL"
+        },
+        {
+          "assetId": "SCENE_DOOR",
+          "lookId": "L01",
+          "stateId": "ST_RAIN"
+        },
+        {
+          "assetId": "PROP_TUBE",
+          "lookId": "L01",
+          "stateId": "ST_UNWRAPPED"
+        },
+        {
+          "assetId": "PROP_UMBRELLA",
+          "lookId": "L01",
+          "stateId": "ST_CLOSED"
+        }
+      ],
+      "textBlocks": []
+    },
+    {
+      "id": "SH02",
+      "phaseId": "PH_RAIN",
+      "beat": "用具体行动说明保护图纸，而不是只用旁白表达担心。",
+      "sourceQuote": "她把手里收拢的黄色雨伞放在门边，回身用一张牛皮纸包住纸筒开口。",
+      "instant": "林岚双手按住纸筒开口的牛皮纸折边，收拢黄伞立在门边。",
+      "before": "黄伞已放门边，纸筒仍在门内。",
+      "after": "纸筒开口包好，黄伞仍收拢且在门边。",
+      "timeBridge": "同一傍晚，紧接上一格",
+      "camera": "手部近景，纸筒开口和牛皮纸清晰，门边黄伞可辨。",
+      "composition": "主体和关键道具清楚，不加入其他角色。",
+      "assetIds": [
+        "CHAR_LIN",
+        "SCENE_DOOR",
+        "PROP_TUBE",
+        "PROP_UMBRELLA",
+        "PROP_PAPER"
+      ],
+      "visualTargets": [
+        {
+          "assetId": "CHAR_LIN",
+          "lookId": "L01",
+          "stateId": "ST_NORMAL"
+        },
+        {
+          "assetId": "SCENE_DOOR",
+          "lookId": "L01",
+          "stateId": "ST_RAIN"
+        },
+        {
+          "assetId": "PROP_TUBE",
+          "lookId": "L01",
+          "stateId": "ST_WRAPPED"
+        },
+        {
+          "assetId": "PROP_UMBRELLA",
+          "lookId": "L01",
+          "stateId": "ST_CLOSED"
+        },
+        {
+          "assetId": "PROP_PAPER",
+          "lookId": "L01",
+          "stateId": "ST_WRAPPING"
+        }
+      ],
+      "textBlocks": []
+    },
+    {
+      "id": "SH03",
+      "phaseId": "PH_RAIN",
+      "beat": "兑现保护图纸后出发的结果。",
+      "sourceQuote": "包好后，她拿起门边的黄色雨伞，在门外撑开，护着纸筒走进雨里。",
+      "instant": "门外，林岚撑着黄色雨伞迈入雨中，包好开口的纸筒护在怀里。",
+      "before": "纸筒开口已包好，黄伞已拿起。",
+      "after": "人和包好的纸筒进入雨中，雨伞保持撑开。",
+      "timeBridge": "紧接上一格，不新增另一天",
+      "camera": "中远景，门口在后方，人物与黄伞朝雨中前行。",
+      "composition": "主体和关键道具清楚，不加入其他角色。",
+      "assetIds": [
+        "CHAR_LIN",
+        "SCENE_DOOR",
+        "PROP_TUBE",
+        "PROP_UMBRELLA",
+        "PROP_PAPER"
+      ],
+      "visualTargets": [
+        {
+          "assetId": "CHAR_LIN",
+          "lookId": "L01",
+          "stateId": "ST_NORMAL"
+        },
+        {
+          "assetId": "SCENE_DOOR",
+          "lookId": "L01",
+          "stateId": "ST_RAIN"
+        },
+        {
+          "assetId": "PROP_TUBE",
+          "lookId": "L01",
+          "stateId": "ST_WRAPPED"
+        },
+        {
+          "assetId": "PROP_UMBRELLA",
+          "lookId": "L01",
+          "stateId": "ST_OPEN"
+        },
+        {
+          "assetId": "PROP_PAPER",
+          "lookId": "L01",
+          "stateId": "ST_WRAPPING"
+        }
+      ],
+      "textBlocks": []
+    }
+  ],
+  "warnings": []
+}

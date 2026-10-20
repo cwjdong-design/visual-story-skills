@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "projectId": "my-story",
+  "title": "未命名项目",
+  "medium": "comic",
+  "revision": 1,
+  "target": {
+    "panelCount": null,
+    "durationSeconds": null,
+    "ratio": "未确定"
+  },
+  "story": {
+    "path": "story.md",
+    "revision": 1,
+    "status": "draft"
+  },
+  "production": {
+    "path": "production.json",
+    "revision": 1,
+    "status": "draft"
+  },
+  "shots": {
+    "path": "shots.json",
+    "revision": 1,
+    "status": "draft"
+  },
+  "authorization": {
+    "generationAllowed": false,
+    "publicationAllowed": false,
+    "maxAttemptsPerShot": 1,
+    "notes": "尚未获得外部执行授权"
+  },
+  "platform": {
+    "name": null,
+    "adapterPath": null
+  }
+}
